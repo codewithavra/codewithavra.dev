@@ -6,43 +6,33 @@
 /**
  * Node modules
  */
-import { useTheme } from '../hooks/useTheme'
-import { Sun, Moon, Monitor } from 'lucide-react'
+import { useTheme } from '../hooks/useTheme';
+import { Sun, Moon } from 'lucide-react';
 
 /**
  * Types
  */
-type Theme = 'light' | 'dark' | 'system'
+type Theme = 'light' | 'dark' | 'system';
 
-const options: { value: Theme; icon: React.ReactNode; label: string }[] = [
-  { value: 'light',  icon: <Sun size={15} />,     label: 'Light'  },
-  { value: 'dark',   icon: <Moon size={15} />,    label: 'Dark'   },
-  { value: 'system', icon: <Monitor size={15} />, label: 'System' },
-]
+const themeMeta: Record<'light' | 'dark', { icon: React.ReactNode; label: string }> = {
+  light: { icon: <Sun size={20}/>, label: 'Light' },
+  dark: { icon: <Moon size={20}/>, label: 'Dark' },
+};
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
+  const activeTheme: 'light' | 'dark' = theme === 'dark' ? 'dark' : 'light';
+  const nextTheme: Theme = activeTheme === 'dark' ? 'light' : 'dark';
+  const { icon, label } = themeMeta[activeTheme];
 
   return (
-    <div className="flex items-center gap-1 rounded-full bg-foreground/10 p-1">
-      {options.map(({ value, icon, label }) => (
-        <button
-          key={value}
-          onClick={() => setTheme(value)}
-          title={label}
-          className={`
-            flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm
-            transition-all duration-200 cursor-pointer
-            ${theme === value
-              ? 'bg-background text-foreground shadow-sm'
-              : 'text-foreground/50 hover:text-foreground'
-            }
-          `}
-        >
-          {icon}
-          <span>{label}</span>
-        </button>
-      ))}
-    </div>
-  )
+    <button
+      onClick={() => setTheme(nextTheme)}
+      title={`${label} mode (click to switch)`}
+      className='bg-foreground/10 text-foreground hover:bg-foreground/20 flex cursor-pointer items-center rounded-md p-2 transition-all duration-200'
+      aria-label={`Current theme: ${label}. Click to switch to ${nextTheme}.`}
+    >
+      {icon}
+    </button>
+  );
 }
