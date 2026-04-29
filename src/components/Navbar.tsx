@@ -4,20 +4,57 @@
  */
 
 /**
+ * Node modules
+ */
+import type { Dispatch, SetStateAction } from 'react';
+
+/**
  * Compoents
  */
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from './ThemeToggle';
 
+/**
+ * Constants
+ */
+import { NAV_ITEMS } from '../constants';
+/**
+ * Icons
+ */
+import { MdMenu } from 'react-icons/md';
+import { BiDownload } from 'react-icons/bi';
 
-const Navbar = () => {
+/**
+ * Prop
+ */
+
+type prop = {
+  setOpenMenu: Dispatch<SetStateAction<boolean>>;
+};
+
+const Navbar = ({  setOpenMenu }: prop) => {
   return (
-    <div className="size-full flex justify-between items-center p-1 h-fit">
-      <div className="w-auto"></div>
-      <div className="w-fit">
-      <ThemeToggle />
+    <div className='bdr-box mx-auto flex h-fit min-h-10 w-full max-w-3xl items-center justify-end gap-2 border-x p-2 font-mono tracking-tight sm:min-h-11 md:min-h-12'>
+      <div className='hidden w-full justify-end gap-2 sm:flex sm:gap-3 sm:items-center border-r bdr-box px-2'>
+        {NAV_ITEMS.map((item) => {
+          return (
+            <a href={item.href} key={item.label} className='text-xs sm:text-sm'>
+              {item.label}
+            </a>
+          );
+        })}
+        <a className="size-fit flex gap-2 items-center " href="/Avranil_Dhar.pdf" download="Avrainil_Dhar_Resume.pdf">
+          <p>Resume</p>
+          <BiDownload />
+        </a>
       </div>
+      <div className='flex items-center justify-center rounded-md bg-foreground/10 p-2 text-xl sm:hidden'>
+        <button onClick={()=>setOpenMenu(prev=>!prev)}>
+          <MdMenu />
+        </button>
+      </div>
+      <ThemeToggle />
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

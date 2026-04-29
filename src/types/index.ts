@@ -10,19 +10,19 @@ import type { IconType } from 'react-icons';
 
 export type Href =
   | '#home'
-  | '#projects'
+  | '#work'
   | '#about'
   | '#experience'
   | '#certifications'
   | '#contact';
 export type SectionLabel =
   | 'Home'
-  | 'Projects'
+  | 'Work'
   | 'About'
   | 'Experience'
   | 'Certifications'
   | 'Contact';
-export type SocialLabel = 'LinkedIn' | 'Email' | 'GitHub' | 'X';
+export type SocialLabel = 'LinkedIn' | 'Email' | 'GitHub' | 'X / Twitter';
 export type ISODateString = `${number}-${number}-${number}`;
 /**
  * Interface

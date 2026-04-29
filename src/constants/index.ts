@@ -12,7 +12,6 @@ import {
   FaCertificate,
   FaEnvelope,
   FaGithub,
-  FaLinkedin,
   FaXTwitter,
   FaCode,
 } from 'react-icons/fa6';
@@ -24,7 +23,7 @@ import {
   SiPython,
 } from 'react-icons/si';
 import { HiHome } from 'react-icons/hi';
-
+import { IoLogoLinkedin } from "react-icons/io5";
 /**
  * NavItems
  */
@@ -35,8 +34,8 @@ export const NAV_ITEMS: NavItem[] = [
     icon: HiHome,
   },
   {
-    href: '#projects',
-    label: 'Projects',
+    href: '#work',
+    label: 'Work',
     icon: FaCode,
   },
   {
@@ -68,7 +67,7 @@ export const SOCIALS: Social[] = [
   {
     href: 'https://www.linkedin.com/in/avranil-dhar',
     label: 'LinkedIn',
-    icon: FaLinkedin,
+    icon: IoLogoLinkedin,
   },
   {
     href: 'https://github.com/codewithavra',
@@ -77,7 +76,7 @@ export const SOCIALS: Social[] = [
   },
   {
     href: 'https://x.com/AvranilDhar',
-    label: 'X',
+    label: 'X / Twitter',
     icon: FaXTwitter,
   },
 ];

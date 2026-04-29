@@ -7,26 +7,38 @@
  * Compoenents
  */
 import TextArray from '../components/TextArray';
+/**
+ * Icons
+ */
+import { MdVerified } from 'react-icons/md';
+import { FaHeart } from 'react-icons/fa';
 
 const Profile = () => {
   return (
-    <div className='flex size-full items-center'>
+    <div className='bdr-box mx-auto flex h-[120px] max-w-3xl items-center border-x sm:h-[170px] md:h-[220px]'>
       {/* profile picture */}
-      <div className='border-foreground/10 bg-background-fade/20 aspect-square h-full border-r'>
-        <div className='border-foreground/10 flex size-full items-center p-1'>
+      <div className='bdr-box aspect-square h-full border-r'>
+        <div className='bdr-box flex size-full items-center p-1'>
           <img
             src='/pfp.jpg'
             alt='pfp'
-            className='border-foreground/40 rounded-full border-3 hover:border-yellow-500'
+            className='bdr-box rounded-full border-3 duration-150 ease-in hover:border-yellow-500/70'
           />
         </div>
       </div>
       <div className='flex h-full w-full flex-col'>
-        <div className='border-foreground/10 bg-background-fade/20 h-[50%] w-full border-b'></div>
-        <div className='text-foreground border-foreground/10 bg-background-fade/20 h-[25%] w-full border-b pl-2 text-xl font-medium sm:text-2xl md:text-3xl'>
-          <h2 className='font-bold'>Avranil Dhar</h2>
+        <div className='bdr-box text-foreground/30 flex h-[50%] w-full flex-col justify-end border-b pb-2 pl-2 font-mono text-xs sm:pb-3 sm:pl-3 md:pb-4 md:pl-4'>
+          <p>
+            Made with <FaHeart className='inline text-red-500' /> by codewithavra
+          </p>
         </div>
-        <div className='bg-background-fade/20 h-[25%] w-full'>
+        <div className='text-foreground bdr-box flex h-[25%] w-full items-center justify-start gap-3 border-b pl-2 text-xl font-medium sm:pl-3 sm:text-2xl md:pl-4 md:text-3xl'>
+          <h2 className='flex h-full items-center justify-center font-bold'>
+            Avranil Dhar
+          </h2>
+          <MdVerified className='text-blue-500' />
+        </div>
+        <div className='h-[25%] w-full'>
           <TextArray
             items={[
               'Engineering Student',

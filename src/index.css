@@ -9,11 +9,10 @@ body {
   font-family: 'Oi', cursive;
 }
 @theme {
-  --color-background: oklch(97% 0 0);
-  --color-background-fade: oklch(92.2% 0 0);
-  --color-foreground: oklch(20.5% 0 0);
-  --color-foreground-fade: oklch(26.9% 0 0);
-  --color-primary-blue: oklch(54.6% 0.245 262.881);
+  --color-background: oklch(98.5% 0 0);
+  --color-background-fade: oklch(97% 0 0);
+  --color-foreground: oklch(14.5% 0 0);
+  --color-foreground-fade: oklch(20.5% 0 0);
 
   --radius-box: 0.625rem;
   --radius-card: 1.25rem;
@@ -23,8 +22,14 @@ body {
   --text-small:0.75rem;
 }
 .dark {
-  --color-background: oklch(20.5% 0 0);
-  --color-background-fade: oklch(26.9% 0 0);
-  --color-foreground: oklch(97% 0 0);
-  --color-foreground-fade: oklch(92.2% 0 0);
+  --color-background: oklch(14.5% 0 0);
+  --color-background-fade: oklch(20.5% 0 0);
+  --color-foreground: oklch(98.5% 0 0);
+  --color-foreground-fade: oklch(97% 0 0);
+}
+
+@layer utilities{
+  .bdr-box {
+    border-color: color-mix(in srgb, var(--color-foreground) 7%, transparent);
+  }
 }

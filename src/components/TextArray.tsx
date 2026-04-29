@@ -34,7 +34,7 @@ const TextArray = ({ items }: prop) => {
       <AnimatePresence mode="wait">
         <motion.span
           key={items[activeIndex]}
-          className="h-full flex text-foreground/80 pl-2 text-sm  sm:text-md md:text-lg items-center font-mono"
+          className="h-full flex text-foreground/80 pl-2 sm:pl-3 md:pl-4 text-xs  sm:text-sm md:text-md items-center font-mono"
           initial={{ y: "-100%", opacity: 0 }}
           animate={{ y: "0%", opacity: 1 }}
           exit={{ y: "100%", opacity: 0 }}

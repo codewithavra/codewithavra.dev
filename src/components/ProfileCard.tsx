@@ -36,7 +36,7 @@ const ProfileCard = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className='grid h-fit w-full grid-cols-2 grid-rows-1 p-4'>
+    <div className='grid h-fit w-full grid-cols-2 grid-rows-1 p-4 max-w-3xl mx-auto border-x bdr-box'>
       {/* left box */}
       <div className='text-foreground/80 md:text-md col-span-1 row-span-1 flex flex-col gap-3 font-mono text-xs sm:text-sm lg:text-lg'>
         {/* item */}
