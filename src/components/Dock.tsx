@@ -27,7 +27,7 @@ const Dock = ({ menu,setMenu } : prop) => {
   return (
       <button
         onClick={() => setMenu((prev) => !prev)}
-        className='text-foreground border-foreground/20 rounded-box text-large bg-background mx-auto flex size-fit items-center justify-center gap-2 border px-4 py-2 z-50'
+        className='text-foreground border-foreground/20 rounded-box bg-background mx-auto flex size-fit items-center justify-center gap-2 border px-4 py-2 z-50 text-xl'
       >
         <p>menu</p>
         {!menu ? <BiMenu /> : <RxCross2 />}

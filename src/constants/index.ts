@@ -6,7 +6,6 @@ import type { Certificate, NavItem, Social, Project } from '../types/index.ts';
 /**
  * Icons
  */
-import { BiHome } from 'react-icons/bi';
 import {
   FaUser,
   FaBriefcase,
@@ -15,8 +14,8 @@ import {
   FaGithub,
   FaLinkedin,
   FaXTwitter,
+  FaCode,
 } from 'react-icons/fa6';
-import { BsSuitcase } from 'react-icons/bs';
 import {
   SiReact,
   SiTypescript,
@@ -24,6 +23,7 @@ import {
   SiVercel,
   SiPython,
 } from 'react-icons/si';
+import { HiHome } from 'react-icons/hi';
 
 /**
  * NavItems
@@ -32,12 +32,12 @@ export const NAV_ITEMS: NavItem[] = [
   {
     href: '#home',
     label: 'Home',
-    icon: BiHome,
+    icon: HiHome,
   },
   {
     href: '#projects',
     label: 'Projects',
-    icon: BsSuitcase,
+    icon: FaCode,
   },
   {
     href: '#about',
