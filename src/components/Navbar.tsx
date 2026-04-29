@@ -3,11 +3,10 @@
  * @copyright codewithavra
  */
 
-import ThemeToggle from "./ThemeToggle";
-
 /**
- * Node modules
+ * Compoents
  */
+import ThemeToggle from "./ThemeToggle";
 
 
 const Navbar = () => {

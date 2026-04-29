@@ -1,10 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&display=swap');
 @import 'tailwindcss';
 @variant dark (&:where(.dark, .dark *));
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+.font-oi {
+  font-family: 'Oi', cursive;
+}
 @theme {
   --color-background: oklch(97% 0 0);
+  --color-background-fade: oklch(92.2% 0 0);
   --color-foreground: oklch(20.5% 0 0);
+  --color-foreground-fade: oklch(26.9% 0 0);
   --color-primary-blue: oklch(54.6% 0.245 262.881);
 
   --radius-box: 0.625rem;
@@ -16,5 +24,7 @@
 }
 .dark {
   --color-background: oklch(20.5% 0 0);
+  --color-background-fade: oklch(26.9% 0 0);
   --color-foreground: oklch(97% 0 0);
+  --color-foreground-fade: oklch(92.2% 0 0);
 }
