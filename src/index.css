@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: oklch(97% 0 0);
+  --color-foreground: oklch(20.5% 0 0);
+  --color-primary-blue: oklch(54.6% 0.245 262.881);
+
+  --radius-box: 0.625rem;
+  --radius-card: 1.25rem;
+
+  --text-large:1.1rem;
+  --text-mid:0.875rem;
+  --text-small:0.75rem;
+}
+.dark {
+  --color-background: oklch(20.5% 0 0);
+  --color-foreground: oklch(97% 0 0);
+}
