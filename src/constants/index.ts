@@ -48,22 +48,22 @@ export const NAV_ITEMS: NavItem[] = [
 // SOCIAL LINKS
 export const SOCIALS: Social[] = [
   {
-    href: "https://www.linkedin.com/in/your-username",
+    href: "https://www.linkedin.com/in/avranil-dhar",
     label: "LinkedIn",
     icon: FaLinkedin,
   },
   {
-    href: "mailto:your-email@example.com",
+    href: "mailto:avranildhar@gmail.com",
     label: "Email",
     icon: FaEnvelope,
   },
   {
-    href: "https://github.com/your-username",
+    href: "https://github.com/codewithavra",
     label: "GitHub",
     icon: FaGithub,
   },
   {
-    href: "https://x.com/your-username",
+    href: "https://x.com/AvranilDhar",
     label: "X( Twitter )",
     icon: FaXTwitter,
   },
