@@ -22,7 +22,7 @@ export type SectionLabel =
   | 'Experience'
   | 'Certifications'
   | 'Contact';
-export type SocialLabel = 'LinkedIn' | 'Email' | 'GitHub' | 'X( Twitter )';
+export type SocialLabel = 'LinkedIn' | 'Email' | 'GitHub' | 'X';
 export type ISODateString = `${number}-${number}-${number}`;
 /**
  * Interface

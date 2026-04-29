@@ -3,6 +3,9 @@
  * @copyright codewithavra
  */
 
+/**
+ * Compoenents
+ */
 import TextArray from '../components/TextArray';
 
 const Profile = () => {

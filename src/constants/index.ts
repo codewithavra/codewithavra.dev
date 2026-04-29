@@ -71,18 +71,13 @@ export const SOCIALS: Social[] = [
     icon: FaLinkedin,
   },
   {
-    href: 'mailto:avranildhar@gmail.com',
-    label: 'Email',
-    icon: FaEnvelope,
-  },
-  {
     href: 'https://github.com/codewithavra',
     label: 'GitHub',
     icon: FaGithub,
   },
   {
     href: 'https://x.com/AvranilDhar',
-    label: 'X( Twitter )',
+    label: 'X',
     icon: FaXTwitter,
   },
 ];

@@ -12,9 +12,10 @@ import { useEffect, useState } from 'react';
  */
 import { BiCode } from 'react-icons/bi';
 import { BsClock } from 'react-icons/bs';
-import { GrGithub, GrLocation } from 'react-icons/gr';
+import {  GrLocation } from 'react-icons/gr';
 import { IoMaleSharp } from 'react-icons/io5';
 import { MdEmail } from 'react-icons/md';
+import { RiVercelFill } from 'react-icons/ri';
 
 const ProfileCard = () => {
   const [time, setTime] = useState('');
@@ -35,7 +36,7 @@ const ProfileCard = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className='grid h-fit w-full grid-cols-2 grid-rows-1 p-3'>
+    <div className='grid h-fit w-full grid-cols-2 grid-rows-1 p-4'>
       {/* left box */}
       <div className='text-foreground/80 md:text-md col-span-1 row-span-1 flex flex-col gap-3 font-mono text-xs sm:text-sm lg:text-lg'>
         {/* item */}
@@ -55,9 +56,9 @@ const ProfileCard = () => {
         {/* item */}
         <div className='flex w-full items-center gap-2'>
           <div className='md:text-md border-foreground/20 bg-foreground/10 rounded-md border p-1 font-mono text-xs sm:text-sm lg:text-lg'>
-            <GrGithub />
+            <RiVercelFill />
           </div>
-          <a href='https://github.com/codewithavra'>codewithavra</a>
+          <a href='https://codewithavra.vercel.app'>codewithavra</a>
         </div>
       </div>
       <div className='text-foreground/80 md:text-md col-span-1 row-span-1 flex flex-col gap-3 font-mono text-xs sm:text-sm lg:text-lg'>
