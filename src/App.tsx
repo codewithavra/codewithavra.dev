@@ -43,11 +43,11 @@ const App = () => {
   return (
     <div className='bg-background text-foreground min-h-dvh overflow-hidden no-scrollbar'>
       {/* Navbar */}
-      <section className='bdr-box fixed top-2 z-50 h-fit w-full border'>
+      <section className='bdr-box fixed top-0 z-50 h-fit w-full border-b border-x'>
         <Navbar setOpenMenu={setOpenMenu} />
       </section>
       {/* Hero Section */}
-      <section className='bdr-box mt-12 h-fit w-full border-b scroll-mt-20' id="home" >
+      <section className='bdr-box mt-10 h-fit w-full border-b scroll-mt-20' id="home" >
         <Hero />
       </section>
       {/* Profile Section */}
