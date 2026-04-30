@@ -15,13 +15,6 @@ import {
   FaXTwitter,
   FaCode,
 } from 'react-icons/fa6';
-import {
-  SiReact,
-  SiTypescript,
-  SiTailwindcss,
-  SiVercel,
-  SiPython,
-} from 'react-icons/si';
 import { HiHome } from 'react-icons/hi';
 import { IoLogoLinkedin } from "react-icons/io5";
 /**
@@ -157,39 +150,19 @@ export const CERTIFICATES: Certificate[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: 'tec-forecasting',
-    label: 'Ionospheric TEC Forecasting using Deep Learning',
-    description:
-      'Time-series forecasting of ionospheric TEC using LSTM and Transformer seq2seq models on minute-level GNSS data.',
-
-    githubLink: 'https://github.com/codewithavra/tec-forecasting',
-
-    imageSrc: '/projects/tec.png',
-
-    timeline: 'Mar 2026 – Present',
-    techStack: [SiPython],
-
-    highlights: [
-      'Processed 41 days of GNSS TEC data (1440 steps/day)',
-      'Implemented LSTM and Transformer architectures',
-      'Used leakage-safe z-score normalization',
-      'Evaluated with RMSE and MAE metrics',
-    ],
-  },
-  {
     id: 'prettier-studio',
     label: 'Prettier Studio — Interactive Config Generator',
     description:
-      'Web-based tool to generate Prettier configurations with real-time preview and multi-format export.',
-
+    'Web-based tool to generate Prettier configurations with real-time preview and multi-format export.',
+    
     githubLink: 'https://github.com/codewithavra/prettier-studio',
     deployedLink: 'https://prettier-studio.vercel.app',
-
+    
     imageSrc: '/projects/prettier.png',
-
-    timeline: 'Apr 2026',
-    techStack: [SiReact, SiTypescript, SiTailwindcss, SiVercel],
-
+    
+    timeline: 'Apr 2026  - ',
+    techStack: ["React", "Typescript", "Tailwindcss", "Vercel"],
+    
     highlights: [
       'Live config preview',
       'Supports JSON, YAML, and JS export',
@@ -201,21 +174,41 @@ export const PROJECTS: Project[] = [
     id: 'qr-craft',
     label: 'QR Craft — Custom QR Code Generator',
     description:
-      'Customizable QR generator with real-time rendering, styling controls, and downloadable output.',
-
+    'Customizable QR generator with real-time rendering, styling controls, and downloadable output.',
+    
     githubLink: 'https://github.com/codewithavra/QR-Code-Generator',
     deployedLink: 'https://qr-craft-iota.vercel.app/',
-
+    
     imageSrc: '/projects/qr.png',
-
-    timeline: 'Apr 2026',
-    techStack: [SiReact, SiTypescript, SiTailwindcss, SiVercel],
-
+    
+    timeline: 'Apr 2026  - ',
+    techStack: ["React", "Typescript", "Tailwindcss", "Vercel"],
+    
     highlights: [
       'Dynamic QR customization (size, color, ECC)',
       'Instant preview and multi-format download',
       'Canvas-based rendering',
       'Responsive UI across devices',
+    ],
+  },
+  {
+    id: 'tec-forecasting',
+    label: 'Ionospheric TEC Forecasting using Deep Learning',
+    description:
+      'Time-series forecasting of ionospheric TEC using LSTM and Transformer seq2seq models on minute-level GNSS data.',
+
+    githubLink: 'https://github.com/codewithavra/tec-forecasting',
+
+    imageSrc: '/projects/tec.png',
+
+    timeline: 'Mar 2026  – ',
+    techStack: ["Python", "Matplotlib", "Numpy", "TensorFlow", "Jupyter Notebook"],
+
+    highlights: [
+      'Processed 41 days of GNSS TEC data (1440 steps/day)',
+      'Implemented LSTM and Transformer architectures',
+      'Used leakage-safe z-score normalization',
+      'Evaluated with RMSE and MAE metrics',
     ],
   },
 ];

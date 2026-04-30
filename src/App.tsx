@@ -17,6 +17,7 @@ import ProfileCard from './components/ProfileCard';
 import Menu from './components/Menu';
 import SectionName from './components/SectionName';
 import TechStack from './components/TechStack';
+import GithubCalendar from './components/GithubCalendar';
 
 /**
  * Sections
@@ -28,24 +29,24 @@ import About from './sections/About';
 import Footer from './sections/Footer';
 import Certifications from './sections/Certifications';
 import Work from './sections/Work';
+import Globe from './sections/Globe';
 
 /**
  * Hooks
  */
 import useLenis from './hooks/useLenis';
-import GithubCalendar from './components/GithubCalendar';
 
 const App = () => {
   useLenis();
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
-    <div className='bg-background text-foreground min-h-svh overflow-x-hidden no-scrollbar'>
+    <div className='bg-background text-foreground min-h-dvh overflow-hidden no-scrollbar'>
       {/* Navbar */}
       <section className='bdr-box fixed top-2 z-50 h-fit w-full border'>
         <Navbar setOpenMenu={setOpenMenu} />
       </section>
       {/* Hero Section */}
-      <section className='bdr-box mt-12 h-fit w-full border-b'>
+      <section className='bdr-box mt-12 h-fit w-full border-b scroll-mt-20' id="home" >
         <Hero />
       </section>
       {/* Profile Section */}
@@ -59,15 +60,20 @@ const App = () => {
         <ProfileCard />
       </section>
       {/* Contact */}
-      <section className='h-fit w-full'>
+      <section className='h-fit w-full scroll-mt-20' id="contact">
         <Contact />
       </section>
       {/* Break */}
       <Break />
       {/* About */}
       <SectionName name={'About Me'} id='about' />
-      <section className='bdr-box h-fit w-full border-b'>
+      <section className='bdr-box h-fit w-full border-b '>
         <About />
+      </section>
+      {/* Where do i live */}
+      <SectionName name={'Where do I live?'} />
+      <section className='bdr-box h-fit w-full border-b'>
+        <Globe />
       </section>
       {/* Education */}
       <SectionName name={'Education'}/>
@@ -76,15 +82,16 @@ const App = () => {
       </section>
       {/* Break */}
       <Break />
-      {/* Github Activity */}
-      <SectionName name="GitHub Activity 2026" id='work'/>
-      <section className='bdr-box h-fit w-full border-b'>
-        <GithubCalendar />
-      </section>
+      
       {/* Projecct Section */}
-      <SectionName name='My Works'  />
+      <SectionName name='My Works' count={4} id='work'/>
       <section className='bdr-box h-fit w-full border-b'>
         <Work />
+      </section>
+      {/* Github Activity */}
+      <SectionName name="GitHub Activity 2026" />
+      <section className='bdr-box h-fit w-full border-b'>
+        <GithubCalendar />
       </section>
       {/* TechStack */}
       <SectionName name='Stack' />
@@ -94,7 +101,7 @@ const App = () => {
       {/* Break */}
       <Break />
       {/* Certification */}
-      <SectionName name='Certifications' id='certifications' />
+      <SectionName name='Certifications' id='certifications' count={5}/>
       <section className='h-fit w-full'>
         <Certifications />
       </section>

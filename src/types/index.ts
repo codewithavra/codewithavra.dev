@@ -58,7 +58,7 @@ export interface Project {
   deployedLink?: string; // optional if not live
   imageSrc: string;
   timeline: string; // e.g., "Apr 2026 – May 2026"
-  techStack: IconType[];
+  techStack: string[];
   highlights?: string[]; // optional bullets
 }
 
