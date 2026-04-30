@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&display=swap');
+
 @import 'tailwindcss';
 @variant dark (&:where(.dark, .dark *));
 
 body {
   font-family: 'Inter', sans-serif;
-}
-.font-oi {
-  font-family: 'Oi', cursive;
 }
 @theme {
   --color-background: oklch(98.5% 0 0);
