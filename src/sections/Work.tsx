@@ -15,7 +15,6 @@ import { PROJECTS } from '../constants';
 /**
  * Icons
  */
-import { SlSettings } from 'react-icons/sl';
 import { LuExpand, LuLink, LuShrink } from 'react-icons/lu';
 import { BiInfinite } from 'react-icons/bi';
 import { TbWorldWww } from "react-icons/tb";
