@@ -18,7 +18,7 @@ import { PROJECTS } from '../constants';
 import { SlSettings } from 'react-icons/sl';
 import { LuExpand, LuLink, LuShrink } from 'react-icons/lu';
 import { BiInfinite } from 'react-icons/bi';
-
+import { TbWorldWww } from "react-icons/tb";
 const Work = () => {
   const [expand, setExpand] = useState<string[]>([]);
   return (
@@ -27,8 +27,8 @@ const Work = () => {
         return (
           <div key={item.id} className='bdr-box h-fit border-b text-foreground'>
             <div className="w-full h-25 flex justify-between items-center border-b bdr-box">
-              <div className="h-full aspect-square  p-2 border-r bdr-box flex justify-center items-center">
-                <SlSettings />
+              <div className="h-full w-fit  px-4 border-r bdr-box flex justify-center items-center text-2xl">
+              <TbWorldWww />
               </div>
               <div className="w-full h-full tracking-tight leading-tight flex flex-col justify-center items-start gap-2 p-2 whitespace-pre-wrap">
                 <p className="font-bold">{item.label}</p>
