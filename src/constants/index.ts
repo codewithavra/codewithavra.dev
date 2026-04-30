@@ -149,8 +149,8 @@ export const PROJECTS: Project[] = [
     description:
       'Personal portfolio showcasing projects, certifications, and technical skills with a modern UI and responsive design.',
 
-    githubLink: 'https://github.com/codewithavra/portfolio', // update if different
-    deployedLink: 'https://codewithavra-dev.vercel.app/',
+    githubLink: 'https://github.com/codewithavra/codewithavra.dev', // update if different
+    deployedLink: 'https://codewithavra.vercel.app/',
 
     imageSrc: '/projects/portfolio.png',
 
