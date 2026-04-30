@@ -150,19 +150,40 @@ export const CERTIFICATES: Certificate[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: 'portfolio',
+    label: 'Developer Portfolio',
+    description:
+      'Personal portfolio showcasing projects, certifications, and technical skills with a modern UI and responsive design.',
+
+    githubLink: 'https://github.com/codewithavra/portfolio', // update if different
+    deployedLink: 'https://codewithavra-dev.vercel.app/',
+
+    imageSrc: '/projects/portfolio.png',
+
+    timeline: 'Apr 2026  - ',
+    techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
+
+    highlights: [
+      'Responsive and modern UI',
+      'Section-based navigation',
+      'Optimized performance and SEO',
+      'Reusable component architecture',
+    ],
+  },
+  {
     id: 'prettier-studio',
     label: 'Prettier Studio — Interactive Config Generator',
     description:
-    'Web-based tool to generate Prettier configurations with real-time preview and multi-format export.',
-    
-    githubLink: 'https://github.com/codewithavra/prettier-studio',
-    deployedLink: 'https://prettier-studio.vercel.app',
-    
+      'Web-based tool to generate Prettier configurations with real-time preview and multi-format export.',
+
+    githubLink: 'https://github.com/codewithavra/prettier-config-generator',
+    deployedLink: 'https://prettierstudio.vercel.app/',
+
     imageSrc: '/projects/prettier.png',
-    
+
     timeline: 'Apr 2026  - ',
-    techStack: ["React", "Typescript", "Tailwindcss", "Vercel"],
-    
+    techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
+
     highlights: [
       'Live config preview',
       'Supports JSON, YAML, and JS export',
@@ -174,16 +195,16 @@ export const PROJECTS: Project[] = [
     id: 'qr-craft',
     label: 'QR Craft — Custom QR Code Generator',
     description:
-    'Customizable QR generator with real-time rendering, styling controls, and downloadable output.',
-    
+      'Customizable QR generator with real-time rendering, styling controls, and downloadable output.',
+
     githubLink: 'https://github.com/codewithavra/QR-Code-Generator',
     deployedLink: 'https://qr-craft-iota.vercel.app/',
-    
+
     imageSrc: '/projects/qr.png',
-    
+
     timeline: 'Apr 2026  - ',
-    techStack: ["React", "Typescript", "Tailwindcss", "Vercel"],
-    
+    techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
+
     highlights: [
       'Dynamic QR customization (size, color, ECC)',
       'Instant preview and multi-format download',
@@ -202,7 +223,7 @@ export const PROJECTS: Project[] = [
     imageSrc: '/projects/tec.png',
 
     timeline: 'Mar 2026  – ',
-    techStack: ["Python", "Matplotlib", "Numpy", "TensorFlow", "Jupyter Notebook"],
+    techStack: ['Python', 'Matplotlib', 'Numpy', 'TensorFlow', 'Jupyter Notebook'],
 
     highlights: [
       'Processed 41 days of GNSS TEC data (1440 steps/day)',

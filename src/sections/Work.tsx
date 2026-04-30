@@ -57,7 +57,7 @@ const Work = () => {
               <h3 className="text-md sm:text-lg text-foreground/80 font-semibold">{item.description}</h3>
               <div className="w-full flex  gap-2 text-blue-500 font-bold">
               <a href={item.githubLink} className="bg-foreground/20 px-2 py-1 rounded-box border bdr-box self-start">GitHub</a>
-              <a href={item.deployedLink} className="bg-foreground/20 px-2 py-1 rounded-box border bdr-box self-start">Live</a>
+              {item.deployedLink && <a href={item.deployedLink} className="bg-foreground/20 px-2 py-1 rounded-box border bdr-box self-start">Live</a>}
               </div>
               <p className="text-xs sm:text-sm md:text-md text-foreground/60 font-medium">{item.highlights}</p>
               <div className=" h-fit w-full flex justify-start items-center gap-3 flex-wrap">
