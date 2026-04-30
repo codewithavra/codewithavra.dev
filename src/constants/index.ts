@@ -1,7 +1,7 @@
 /**
  * Interfaces & Types
  */
-import type { Certificate, NavItem, Social, Project } from '../types/index.ts';
+import type { Certificate, NavItem, Social, Project, TechCategory } from '../types/index.ts';
 
 /**
  * Icons
@@ -91,25 +91,12 @@ export const CERTIFICATES: Certificate[] = [
     description:
       'Comprehensive course covering OOP, exception handling, and Java application development.',
 
-    imageSrc: '/certificates/java.png',
-
+    imageSrc: '/certifications/nptel.webp',
     issuedOn: '2025-10-01',
     institute: 'NPTEL (IIT Kharagpur)',
 
-    credentialLink: 'https://nptel.ac.in',
-  },
-  {
-    id: 'nptel-dbms',
-    label: 'Introduction to Database Systems',
-    description:
-      'Focused on relational models, SQL, normalization, and transaction management.',
-
-    imageSrc: '/certificates/dbms.png',
-
-    issuedOn: '2025-04-01',
-    institute: 'NPTEL (IIT Madras)',
-
-    credentialLink: 'https://nptel.ac.in',
+    credentialLink:
+      'https://drive.google.com/file/d/1agacBu5IW2bWLwIDAFUAd8KeKEEHfymn/view?usp=drive_link',
   },
   {
     id: 'mean-stack',
@@ -117,12 +104,37 @@ export const CERTIFICATES: Certificate[] = [
     description:
       '36-hour training on MongoDB, Express.js, Angular, and Node.js for full-stack applications.',
 
-    imageSrc: '/certificates/mean.png',
-
+    imageSrc: '/certifications/ardentinternships_logo.webp',
     issuedOn: '2025-07-01',
     institute: 'Ardent Computech',
 
-    credentialLink: 'https://ardentcollaborations.com',
+    credentialLink:
+      'https://drive.google.com/file/d/13iTsgmaVzgSL6XKRB54Ex-VuqH_bNfCr/view?usp=drive_link',
+  },
+  {
+    id: 'ardent-python-django',
+    label: 'Python with Django (30 Hours Training)',
+    description:
+      'Completed a 30-hour training program on Python with Django, covering backend development fundamentals and web application building.',
+
+    imageSrc: '/certifications/ardentinternships_logo.webp', // save your uploaded image with this name
+    issuedOn: '2025-02-12',
+    institute: 'Ardent Computech Pvt. Ltd.',
+
+    credentialLink: 'https://drive.google.com/file/d/1fuzO5S7_BZk5TWuGyMfjKZ6ZSXjblR-b/view?usp=drive_link', // optional: add if you upload to Drive
+  },
+  {
+    id: 'nptel-dbms',
+    label: 'Introduction to Database Systems',
+    description:
+      'Focused on relational models, SQL, normalization, and transaction management.',
+
+    imageSrc: '/certifications/nptel.webp',
+    issuedOn: '2025-04-01',
+    institute: 'NPTEL (IIT Madras)',
+
+    credentialLink:
+      'https://drive.google.com/file/d/1eI2fjuNdI4Fa41D6DN0jOProuhJTvtuA/view?usp=drive_link',
   },
   {
     id: 'circuithon-finalist',
@@ -130,10 +142,12 @@ export const CERTIFICATES: Certificate[] = [
     description:
       'Selected as a finalist among 150 participants in a circuit design competition.',
 
-    imageSrc: '/certificates/circuithon.png',
-
+    imageSrc: '/certifications/IEM.webp',
     issuedOn: '2024-12-01',
     institute: 'IEEE IEM CAS Student Branch',
+
+    credentialLink:
+      'https://drive.google.com/file/d/1n7cmfufs192IG0bmjir4_ioeUTJOBD9G/view?usp=drive_link',
   },
 ];
 
@@ -202,6 +216,53 @@ export const PROJECTS: Project[] = [
       'Instant preview and multi-format download',
       'Canvas-based rendering',
       'Responsive UI across devices',
+    ],
+  },
+];
+
+
+/**
+ * TechStack
+ */
+
+export const TECH_STACK: TechCategory[] = [
+  {
+    label: "Frontend",
+    items: [
+      { name: "HTML", icon: "html" },
+      { name: "CSS", icon: "css" },
+      { name: "Tailwind", icon: "tailwind" },
+      { name: "React", icon: "react" },
+      { name: "JavaScript", icon: "js" },
+      { name: "TypeScript", icon: "ts" },
+    ],
+  },
+  {
+    label: "Backend",
+    items: [
+      { name: "Node.js", icon: "nodejs" },
+      { name: "Bun", icon: "bun" },
+      { name: "Express", icon: "express" },
+      { name: "MongoDB", icon: "mongodb" },
+      { name: "MySQL", icon: "mysql" },
+      { name: "SQL", icon: "postgresql" },
+    ],
+  },
+  {
+    label: "Languages",
+    items: [
+      { name: "Java", icon: "java" },
+      { name: "Python", icon: "python" },
+      { name: "C", icon: "c" },
+    ],
+  },
+  {
+    label: "Tools & DevOps",
+    items: [
+      { name: "Git", icon: "git" },
+      { name: "GitHub", icon: "github" },
+      { name: "Linux", icon: "linux" },
+      { name: "Vercel", icon: "vercel" },
     ],
   },
 ];

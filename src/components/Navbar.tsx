@@ -33,7 +33,7 @@ type prop = {
 
 const Navbar = ({  setOpenMenu }: prop) => {
   return (
-    <div className='bdr-box mx-auto flex h-fit min-h-10 w-full max-w-3xl items-center justify-end gap-2 border-x p-2 font-mono tracking-tight sm:min-h-11 md:min-h-12'>
+    <div className='bdr-box mx-auto flex h-fit min-h-10 w-full max-w-3xl items-center justify-end gap-2 border-x p-2 font-mono tracking-tight sm:min-h-11 md:min-h-12 bg-background/70 backdrop-blur-xs  sm:backdrop-blur-sm'>
       <div className='hidden w-full justify-end gap-2 sm:flex sm:gap-3 sm:items-center border-r bdr-box px-2'>
         {NAV_ITEMS.map((item) => {
           return (

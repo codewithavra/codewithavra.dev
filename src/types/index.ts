@@ -24,6 +24,17 @@ export type SectionLabel =
   | 'Contact';
 export type SocialLabel = 'LinkedIn' | 'Email' | 'GitHub' | 'X / Twitter';
 export type ISODateString = `${number}-${number}-${number}`;
+
+export type TechItem = {
+  name: string;
+  icon: string; // skill icon key
+};
+
+export type TechCategory = {
+  label: string;
+  items: TechItem[];
+};
+
 /**
  * Interface
  */

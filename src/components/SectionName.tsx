@@ -3,7 +3,6 @@
  * @copyright codewithavra
  */
 
-import React from 'react'
 
 const SectionName = ({ name } : { name : string}) => {
   return (
