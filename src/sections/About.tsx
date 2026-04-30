@@ -5,17 +5,22 @@
 
 const About = () => {
   return (
-    <div className='max-w-3xl mx-auto h-fit w-full text-foreground whitespace-pre-wrap flex flex-col text-left p-4 gap-4 border-x bdr-box'>
-        <p className="font-mono text-xs sm:text-sm md:text-md text-justify tracking-tighter leading-tight">
-          --I’m an engineering student specializing in Electronics and
-          Communication, with a strong focus on building scalable and
-          user-centric web applications. 
-          <br />
-          <br />
-        --I work primarily with React, Node.js,
-          and modern frontend tooling to create responsive, performant
-          interfaces and developer-focused tools.
-        </p>
+    <div className='text-foreground bdr-box mx-auto flex h-fit w-full max-w-3xl flex-col gap-4 border-x p-4 text-left whitespace-pre-wrap'>
+      <p className='textStyle-heading'>
+        I'm Avranil, an Electronics & Communication Engineering student at
+        Narula Institute of Technology, Kolkata — with a CGPA of 9.5 and a
+        passion for building things on the web.
+        <br />
+        <br />
+        I work with React, Node.js, TypeScript, and modern frontend tooling to
+        craft responsive interfaces and developer-focused tools. From LSTM-based
+        TEC forecasting to QR generators and Prettier config tools — I like
+        solving real problems with clean code.
+        <br />
+        <br />
+        When I'm not building, I'm learning — ranked Top 1% in NPTEL's Java and
+        Database Systems courses among thousands of participants.
+      </p>
     </div>
   );
 };

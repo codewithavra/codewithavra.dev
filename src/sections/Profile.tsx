@@ -29,7 +29,8 @@ const Profile = () => {
       <div className='flex h-full w-full flex-col'>
         <div className='bdr-box text-foreground/30 flex h-[50%] w-full flex-col justify-end border-b pb-2 pl-2 font-mono text-xs sm:pb-3 sm:pl-3 md:pb-4 md:pl-4'>
           <p>
-            Made with <FaHeart className='inline text-red-500' /> by codewithavra
+            Made with <FaHeart className='inline text-red-500' /> by
+            codewithavra
           </p>
         </div>
         <div className='text-foreground bdr-box flex h-[25%] w-full items-center justify-start gap-3 border-b pl-2 text-xl font-medium sm:pl-3 sm:text-2xl md:pl-4 md:text-3xl'>
@@ -43,6 +44,11 @@ const Profile = () => {
             items={[
               'Engineering Student',
               'Pre-Final Year Student',
+              'Full Stack Developer',
+              'React Developer',
+              'Node.js Developer',
+              'NPTEL Top 1% Achiever',
+              'Building cool stuff',
               'This too shall pass',
             ]}
           />

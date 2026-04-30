@@ -33,6 +33,15 @@ body {
     border-color: color-mix(in srgb, var(--color-foreground) 7%, transparent);
   }
 }
+@layer components{
+  .textStyle-heading{
+    @apply text-base sm:text-lg text-foreground
+  }
+  .textStyle-subHeading{
+    @apply text-xs sm:text-sm  text-foreground/40
+  }
+  
+}
 
 .no-scrollbar {
   scroll-behavior: smooth;
