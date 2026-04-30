@@ -30,10 +30,10 @@ const Work = () => {
               <TbWorldWww />
               </div>
               <div className="w-full h-full tracking-tight leading-tight flex flex-col justify-center items-start gap-2 p-2 whitespace-pre-wrap">
-                <p className="font-bold">{item.label}</p>
+                <p className="font-bold text-lg sm:text-xl">{item.label}</p>
                 <p className="text-xs sm:text-sm text-foreground/30 inline">{item.timeline} <BiInfinite className="inline text-sm sm:text-md" /></p>
               </div>
-              <a href={item.deployedLink} className="px-3 h-full w-fit flex justify-center items-center border-l bdr-box"><LuLink /></a>
+              {item.deployedLink && <a href={item.deployedLink} className="px-3 h-full w-fit flex justify-center items-center border-l bdr-box"><LuLink /></a>}
               <button
                 onClick={() =>
                   setExpand((prev) =>
