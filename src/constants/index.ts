@@ -1,14 +1,13 @@
 /**
  * Interfaces & Types
  */
-import type { Certificate, NavItem, Social, Project, TechCategory } from '../types/index.ts';
+import type { Certificate, NavItem, Social, Project, TechCategory, Education } from '../types/index.ts';
 
 /**
  * Icons
  */
 import {
   FaUser,
-  FaBriefcase,
   FaCertificate,
   FaEnvelope,
   FaGithub,
@@ -40,11 +39,6 @@ export const NAV_ITEMS: NavItem[] = [
     href: '#work',
     label: 'Work',
     icon: FaCode,
-  },
-  {
-    href: '#experience',
-    label: 'Experience',
-    icon: FaBriefcase,
   },
   {
     href: '#certifications',
@@ -278,5 +272,37 @@ export const TECH_STACK: TechCategory[] = [
       { name: "Linux", icon: "linux" },
       { name: "Vercel", icon: "vercel" },
     ],
+  },
+];
+
+
+
+export const EDUCATION: Education[] = [
+  {
+    institution: "Narula Institute of Technology",
+    degree: "B.Tech",
+    field: "Electronics & Communication Engineering",
+    grade: "9.5",
+    gradeType: "CGPA",
+    period: "Aug, 2023~Present",
+    location: "Kolkata",
+  },
+  {
+    institution: "Kalyan Nagar Vidyapith",
+    degree: "10+2 (W.B.C.H.S.E)",
+    field: "Pure Science",
+
+    grade: "80",
+    gradeType: "percentage",
+    period: "2022",
+    location: "Kolkata",
+  },
+  {
+    institution: "Kalyan Nagar Vidyapith",
+    degree: "10 (W.B.B.S.E)",
+    grade: "81",
+    gradeType: "percentage",
+    period: "2020",
+    location: "Kolkata",
   },
 ];

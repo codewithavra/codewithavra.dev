@@ -25,12 +25,12 @@ const Work = () => {
       {PROJECTS.map((item) => {
         return (
           <div key={item.id} className='bdr-box h-fit border-b text-foreground'>
-            <div className="w-full h-25 flex justify-between items-center border-b bdr-box">
+            <div className="w-full h-30 flex justify-between items-center border-b bdr-box">
               <div className="h-full w-fit  px-4 border-r bdr-box flex justify-center items-center text-2xl">
               <TbWorldWww />
               </div>
               <div className="w-full h-full tracking-tight leading-tight flex flex-col justify-center items-start gap-2 p-2 whitespace-pre-wrap">
-                <p className="font-bold text-lg sm:text-xl">{item.label}</p>
+                <p className="font-bold text-xl sm:text-2xl">{item.label}</p>
                 <p className="text-xs sm:text-sm text-foreground/30 inline">{item.timeline} <BiInfinite className="inline text-sm sm:text-md" /></p>
               </div>
               {item.deployedLink && <a href={item.deployedLink} className="px-3 h-full w-fit flex justify-center items-center border-l bdr-box"><LuLink /></a>}

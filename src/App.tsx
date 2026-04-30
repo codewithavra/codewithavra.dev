@@ -35,6 +35,7 @@ import Globe from './sections/Globe';
  * Hooks
  */
 import useLenis from './hooks/useLenis';
+import Education from './sections/Education';
 
 const App = () => {
   useLenis();
@@ -76,9 +77,9 @@ const App = () => {
         <Globe />
       </section>
       {/* Education */}
-      <SectionName name={'Education'}/>
+      <SectionName name={'Education'} id="education"/>
       <section className='bdr-box h-fit w-full border-b'>
-        <About />
+        <Education />
       </section>
       {/* Break */}
       <Break />

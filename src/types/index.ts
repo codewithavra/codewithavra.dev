@@ -12,14 +12,12 @@ export type Href =
   | '#home'
   | '#work'
   | '#about'
-  | '#experience'
   | '#certifications'
   | '#contact';
 export type SectionLabel =
   | 'Home'
   | 'Work'
   | 'About'
-  | 'Experience'
   | 'Certifications'
   | 'Contact';
 export type SocialLabel = 'LinkedIn' | 'Email' | 'GitHub' | 'X / Twitter';
@@ -33,6 +31,16 @@ export type TechItem = {
 export type TechCategory = {
   label: string;
   items: TechItem[];
+};
+
+export type Education = {
+  institution: string;
+  degree: string;
+  field?: string;
+  grade: string;
+  gradeType: "CGPA" | "percentage";
+  period: string;
+  location: string;
 };
 
 /**
@@ -71,3 +79,4 @@ export interface Certificate {
   institute: string;
   credentialLink?: string;
 }
+
