@@ -20,7 +20,7 @@ const Profile = () => {
       <div className='bdr-box aspect-square h-full border-r'>
         <div className='bdr-box flex size-full items-center p-1'>
           <img
-            src='/pfp.jpg'
+            src='/pfp.webp'
             alt='pfp'
             className='bdr-box rounded-full border-3 duration-150 ease-in hover:border-yellow-500/70'
             fetchPriority='high'
