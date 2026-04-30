@@ -3,17 +3,16 @@
  * @copyright codewithavra
  */
 
-
 /**
  * Node modules
-*/
+ */
 import { useState } from 'react';
 
 /**
  * Components
-*/
-import Navbar from "./components/Navbar";
-import Break from "./components/Break";
+ */
+import Navbar from './components/Navbar';
+import Break from './components/Break';
 import ProfileCard from './components/ProfileCard';
 import Menu from './components/Menu';
 import SectionName from './components/SectionName';
@@ -21,70 +20,82 @@ import TechStack from './components/TechStack';
 
 /**
  * Sections
-*/
+ */
 import Hero from './sections/Hero';
 import Profile from './sections/Profile';
 import Contact from './sections/Contact';
 import About from './sections/About';
 import Footer from './sections/Footer';
 import Certifications from './sections/Certifications';
+import Work from './sections/Work';
 
 /**
  * Hooks
-*/
+ */
 import useLenis from './hooks/useLenis';
+import GithubCalendar from './components/GithubCalendar';
 
 const App = () => {
   useLenis();
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
-    <div className="min-h-svh bg-background text-foreground overflow-x-hidden">
+    <div className='bg-background text-foreground min-h-svh overflow-x-hidden no-scrollbar'>
       {/* Navbar */}
-      <section className="fixed top-2 h-fit w-full border bdr-box z-50">
+      <section className='bdr-box fixed top-2 z-50 h-fit w-full border'>
         <Navbar setOpenMenu={setOpenMenu} />
       </section>
       {/* Hero Section */}
-      <section className="mt-12 h-fit w-full border-b bdr-box">
+      <section className='bdr-box mt-12 h-fit w-full border-b'>
         <Hero />
       </section>
       {/* Profile Section */}
-      <section className="h-fit w-full">
+      <section className='h-fit w-full'>
         <Profile />
       </section>
       {/* Break */}
       <Break />
       {/* Profilecard Section */}
-      <section className="h-fit w-full border-b bdr-box">
+      <section className='bdr-box h-fit w-full border-b'>
         <ProfileCard />
       </section>
       {/* Contact */}
-      <section className="h-fit w-full">
-      <Contact />
+      <section className='h-fit w-full'>
+        <Contact />
       </section>
       {/* Break */}
       <Break />
       {/* About */}
-      <SectionName name={"About"} />
-      <section className="h-fit w-full border-b bdr-box">
+      <SectionName name={'About Me'} id='about' />
+      <section className='bdr-box h-fit w-full border-b'>
+        <About />
+      </section>
+      {/* Education */}
+      <SectionName name={'Education'}/>
+      <section className='bdr-box h-fit w-full border-b'>
         <About />
       </section>
       {/* Break */}
       <Break />
+      {/* Github Activity */}
+      <SectionName name="GitHub Activity 2026" id='work'/>
+      <section className='bdr-box h-fit w-full border-b'>
+        <GithubCalendar />
+      </section>
       {/* Projecct Section */}
-      <SectionName name="My Works" />
-      <section className="h-fit w-full border-b bdr-box">
-        <About />
+      <SectionName name='My Works'  />
+      <section className='bdr-box h-fit w-full border-b'>
+        <Work />
       </section>
       {/* TechStack */}
-      <SectionName name="Stack" />
-      <section className="h-fit w-full">
+      <SectionName name='Stack' />
+      <section className='h-fit w-full'>
         <TechStack />
       </section>
       {/* Break */}
       <Break />
       {/* Certification */}
-      <SectionName name="Certifications" />
-      <section className="h-fit w-full">
+      <SectionName name='Certifications' id='certifications' />
+      <section className='h-fit w-full'>
         <Certifications />
       </section>
       {/* Break */}
@@ -93,8 +104,7 @@ const App = () => {
       {openMenu && <Menu />}
       <Footer />
     </div>
+  );
+};
 
-  )
-}
-
-export default App
+export default App;

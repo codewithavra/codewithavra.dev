@@ -33,3 +33,13 @@ body {
     border-color: color-mix(in srgb, var(--color-foreground) 7%, transparent);
   }
 }
+
+.no-scrollbar {
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}

@@ -34,14 +34,19 @@ export const NAV_ITEMS: NavItem[] = [
     icon: HiHome,
   },
   {
-    href: '#work',
-    label: 'Work',
-    icon: FaCode,
+    href: '#contact',
+    label: 'Contact',
+    icon: FaEnvelope,
   },
   {
     href: '#about',
     label: 'About',
     icon: FaUser,
+  },
+  {
+    href: '#work',
+    label: 'Work',
+    icon: FaCode,
   },
   {
     href: '#experience',
@@ -52,11 +57,6 @@ export const NAV_ITEMS: NavItem[] = [
     href: '#certifications',
     label: 'Certifications',
     icon: FaCertificate,
-  },
-  {
-    href: '#contact',
-    label: 'Contact',
-    icon: FaEnvelope,
   },
 ];
 

@@ -42,7 +42,7 @@ const Navbar = ({  setOpenMenu }: prop) => {
             </a>
           );
         })}
-        <a className="size-fit flex gap-2 items-center " href="/Avranil_Dhar.pdf" download="Avrainil_Dhar_Resume.pdf">
+        <a className="size-fit flex gap-2 items-center bg-foreground/10 py-2 px-3 rounded-box hover:bg-foreground/20" href="/Avranil_Dhar.pdf" download="Avrainil_Dhar_Resume.pdf">
           <p>Resume</p>
           <BiDownload />
         </a>
