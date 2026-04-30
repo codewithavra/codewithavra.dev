@@ -91,7 +91,7 @@ export const CERTIFICATES: Certificate[] = [
     description:
       'Comprehensive course covering OOP, exception handling, and Java application development.',
 
-    imageSrc: '/certifications/nptel.webp',
+    imageSrc: 'https://skillicons.dev/icons?i=java',
     issuedOn: '2025-10-01',
     institute: 'NPTEL (IIT Kharagpur)',
 
@@ -104,7 +104,7 @@ export const CERTIFICATES: Certificate[] = [
     description:
       '36-hour training on MongoDB, Express.js, Angular, and Node.js for full-stack applications.',
 
-    imageSrc: '/certifications/ardentinternships_logo.webp',
+    imageSrc: 'https://skillicons.dev/icons?i=angular',
     issuedOn: '2025-07-01',
     institute: 'Ardent Computech',
 
@@ -113,11 +113,11 @@ export const CERTIFICATES: Certificate[] = [
   },
   {
     id: 'ardent-python-django',
-    label: 'Python with Django (30 Hours Training)',
+    label: 'Python with Django',
     description:
       'Completed a 30-hour training program on Python with Django, covering backend development fundamentals and web application building.',
 
-    imageSrc: '/certifications/ardentinternships_logo.webp', // save your uploaded image with this name
+    imageSrc: 'https://skillicons.dev/icons?i=django', // save your uploaded image with this name
     issuedOn: '2025-02-12',
     institute: 'Ardent Computech Pvt. Ltd.',
 
@@ -129,7 +129,7 @@ export const CERTIFICATES: Certificate[] = [
     description:
       'Focused on relational models, SQL, normalization, and transaction management.',
 
-    imageSrc: '/certifications/nptel.webp',
+    imageSrc: 'https://skillicons.dev/icons?i=mysql',
     issuedOn: '2025-04-01',
     institute: 'NPTEL (IIT Madras)',
 
@@ -138,11 +138,11 @@ export const CERTIFICATES: Certificate[] = [
   },
   {
     id: 'circuithon-finalist',
-    label: 'Finalist — CIRCUITHON 2024',
+    label: 'Finalist - Circuithon 2024',
     description:
       'Selected as a finalist among 150 participants in a circuit design competition.',
 
-    imageSrc: '/certifications/IEM.webp',
+    imageSrc: 'https://skillicons.dev/icons?i=arduino',
     issuedOn: '2024-12-01',
     institute: 'IEEE IEM CAS Student Branch',
 
