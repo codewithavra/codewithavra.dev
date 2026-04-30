@@ -83,7 +83,7 @@ export const CERTIFICATES: Certificate[] = [
     institute: 'NPTEL (IIT Kharagpur)',
 
     credentialLink:
-      'https://drive.google.com/file/d/1agacBu5IW2bWLwIDAFUAd8KeKEEHfymn/view?usp=drive_link',
+      'https://drive.google.com/file/d/1agacBu5IW2bWLwIDAFUAd8KeKEEHfymn/view?usp=sharing',
   },
   {
     id: 'mean-stack',
@@ -96,7 +96,7 @@ export const CERTIFICATES: Certificate[] = [
     institute: 'Ardent Computech',
 
     credentialLink:
-      'https://drive.google.com/file/d/13iTsgmaVzgSL6XKRB54Ex-VuqH_bNfCr/view?usp=drive_link',
+      'https://drive.google.com/file/d/13iTsgmaVzgSL6XKRB54Ex-VuqH_bNfCr/view?usp=sharing',
   },
   {
     id: 'ardent-python-django',
@@ -108,7 +108,7 @@ export const CERTIFICATES: Certificate[] = [
     issuedOn: '2025-02-12',
     institute: 'Ardent Computech Pvt. Ltd.',
 
-    credentialLink: 'https://drive.google.com/file/d/1fuzO5S7_BZk5TWuGyMfjKZ6ZSXjblR-b/view?usp=drive_link', // optional: add if you upload to Drive
+    credentialLink: 'https://drive.google.com/file/d/1fuzO5S7_BZk5TWuGyMfjKZ6ZSXjblR-b/view?usp=sharing', // optional: add if you upload to Drive
   },
   {
     id: 'nptel-dbms',
@@ -121,7 +121,7 @@ export const CERTIFICATES: Certificate[] = [
     institute: 'NPTEL (IIT Madras)',
 
     credentialLink:
-      'https://drive.google.com/file/d/1eI2fjuNdI4Fa41D6DN0jOProuhJTvtuA/view?usp=drive_link',
+      'https://drive.google.com/file/d/1eI2fjuNdI4Fa41D6DN0jOProuhJTvtuA/view?usp=sharing',
   },
   {
     id: 'circuithon-finalist',
@@ -134,7 +134,7 @@ export const CERTIFICATES: Certificate[] = [
     institute: 'IEEE IEM CAS Student Branch',
 
     credentialLink:
-      'https://drive.google.com/file/d/1n7cmfufs192IG0bmjir4_ioeUTJOBD9G/view?usp=drive_link',
+      'https://drive.google.com/file/d/1n7cmfufs192IG0bmjir4_ioeUTJOBD9G/view?usp=sharing',
   },
 ];
 
