@@ -5,7 +5,7 @@
 
 const About = () => {
   return (
-    <div className='h-fit w-full text-foreground whitespace-pre-wrap flex flex-col text-left p-4 gap-4'>
+    <div className='max-w-3xl mx-auto h-fit w-full text-foreground whitespace-pre-wrap flex flex-col text-left p-4 gap-4 border-x bdr-box' id="about">
         <p>
           I’m an engineering student specializing in Electronics and
           Communication, with a strong focus on building scalable and

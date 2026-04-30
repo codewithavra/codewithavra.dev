@@ -15,7 +15,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 const Contact = () => {
   return (
-    <div className='mx-auto flex h-fit w-full max-w-3xl items-center justify-between gap-3'>
+    <div className='mx-auto flex h-fit w-full max-w-3xl items-center justify-between gap-3' id="contact">
       {SOCIALS.map((item) => {
         const Icon = item.icon;
         return (

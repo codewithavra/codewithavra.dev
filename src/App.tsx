@@ -8,7 +8,6 @@
  * Node modules
 */
 import { useState } from 'react';
-// import useLenis from './hooks/useLenis';
 
 /**
  * Components
@@ -16,11 +15,8 @@ import { useState } from 'react';
 import Navbar from "./components/Navbar";
 import Break from "./components/Break";
 import ProfileCard from './components/ProfileCard';
-
-// import Dock from './components/Dock';
-// import Navbar from './components/Navbar';
-// import Menu from './components/Menu';
-// import ProfileCard from './components/ProfileCard';
+import Menu from './components/Menu';
+import SectionName from './components/SectionName';
 
 /**
  * Sections
@@ -28,16 +24,12 @@ import ProfileCard from './components/ProfileCard';
 import Hero from './sections/Hero';
 import Profile from './sections/Profile';
 import Contact from './sections/Contact';
+import About from './sections/About';
 
 /**
  * Hooks
 */
 import useLenis from './hooks/useLenis';
-
-// import Hero from './sections/Hero';
-// import Profile from './sections/Profile';
-// import Contact from './sections/Contact';
-// import About from './sections/About';
 
 // const App = () => {
 //   const [menu, setMenu] = useState<boolean>(false);
@@ -183,6 +175,13 @@ const App = () => {
       </section>
       {/* Break */}
       <Break />
+      {/* About */}
+      <SectionName name={"About"} />
+      <section className="h-fit w-full border-b bdr-box">
+        <About />
+      </section>
+      {/* Menu */}
+      {openMenu && <Menu />}
     </div>
 
   )
