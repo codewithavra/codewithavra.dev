@@ -13,5 +13,8 @@ type Props = {
       alt={icon}
       width={size}
       height={size}
+      loading='lazy'
+      decoding='async'
+      referrerPolicy='no-referrer'
     />
   );

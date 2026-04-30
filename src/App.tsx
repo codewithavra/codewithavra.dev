@@ -6,7 +6,7 @@
 /**
  * Node modules
  */
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 
 /**
  * Components
@@ -14,10 +14,8 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Break from './components/Break';
 import ProfileCard from './components/ProfileCard';
-import Menu from './components/Menu';
 import SectionName from './components/SectionName';
-import TechStack from './components/TechStack';
-import GithubCalendar from './components/GithubCalendar';
+import Loader from './components/Loader';
 
 /**
  * Sections
@@ -25,25 +23,32 @@ import GithubCalendar from './components/GithubCalendar';
 import Hero from './sections/Hero';
 import Profile from './sections/Profile';
 import Contact from './sections/Contact';
-import About from './sections/About';
 import Footer from './sections/Footer';
-import Certifications from './sections/Certifications';
-import Work from './sections/Work';
-import Globe from './sections/Globe';
 
 /**
  * Hooks
  */
 import useLenis from './hooks/useLenis';
-import Education from './sections/Education';
+
+const Menu = lazy(() => import('./components/Menu'));
+const TechStack = lazy(() => import('./components/TechStack'));
+const GithubCalendar = lazy(() => import('./components/GithubCalendar'));
+const About = lazy(() => import('./sections/About'));
+const Certifications = lazy(() => import('./sections/Certifications'));
+const Work = lazy(() => import('./sections/Work'));
+const Globe = lazy(() => import('./sections/Globe'));
+const Education = lazy(() => import('./sections/Education'));
 
 const App = () => {
   useLenis();
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const lazyFallback = <div className='h-20 w-full' />;
   return (
     <div className='bg-background text-foreground min-h-dvh overflow-hidden no-scrollbar'>
+      {/* Loader */}
+      <Loader />
       {/* Navbar */}
-      <section className='bdr-box fixed top-0 z-50 h-fit w-full border-b border-x'>
+      <section className='bdr-box fixed top-0 z-40 h-fit w-full border-b border-x'>
         <Navbar setOpenMenu={setOpenMenu} />
       </section>
       {/* Hero Section */}
@@ -69,17 +74,23 @@ const App = () => {
       {/* About */}
       <SectionName name={'About Me'} id='about' />
       <section className='bdr-box h-fit w-full border-b '>
-        <About />
+        <Suspense fallback={lazyFallback}>
+          <About />
+        </Suspense>
       </section>
       {/* Where do i live */}
       <SectionName name={'Where do I live?'} />
       <section className='bdr-box h-fit w-full border-b'>
-        <Globe />
+        <Suspense fallback={lazyFallback}>
+          <Globe />
+        </Suspense>
       </section>
       {/* Education */}
       <SectionName name={'Education'} id="education"/>
       <section className='bdr-box h-fit w-full border-b'>
-        <Education />
+        <Suspense fallback={lazyFallback}>
+          <Education />
+        </Suspense>
       </section>
       {/* Break */}
       <Break />
@@ -87,29 +98,41 @@ const App = () => {
       {/* Projecct Section */}
       <SectionName name='My Works' count={4} id='work'/>
       <section className='bdr-box h-fit w-full border-b'>
-        <Work />
+        <Suspense fallback={lazyFallback}>
+          <Work />
+        </Suspense>
       </section>
       {/* Github Activity */}
       <SectionName name="GitHub Activity 2026" />
       <section className='bdr-box h-fit w-full border-b'>
-        <GithubCalendar />
+        <Suspense fallback={lazyFallback}>
+          <GithubCalendar />
+        </Suspense>
       </section>
       {/* TechStack */}
       <SectionName name='Stack' />
       <section className='h-fit w-full'>
-        <TechStack />
+        <Suspense fallback={lazyFallback}>
+          <TechStack />
+        </Suspense>
       </section>
       {/* Break */}
       <Break />
       {/* Certification */}
       <SectionName name='Certifications' id='certifications' count={5}/>
       <section className='h-fit w-full'>
-        <Certifications />
+        <Suspense fallback={lazyFallback}>
+          <Certifications />
+        </Suspense>
       </section>
       {/* Break */}
       <Break />
       {/* Menu */}
-      {openMenu && <Menu />}
+      {openMenu && (
+        <Suspense fallback={null}>
+          <Menu />
+        </Suspense>
+      )}
       <Footer />
     </div>
   );

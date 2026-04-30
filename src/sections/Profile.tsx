@@ -23,6 +23,8 @@ const Profile = () => {
             src='/pfp.jpg'
             alt='pfp'
             className='bdr-box rounded-full border-3 duration-150 ease-in hover:border-yellow-500/70'
+            fetchPriority='high'
+            decoding='async'
           />
         </div>
       </div>

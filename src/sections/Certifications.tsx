@@ -20,7 +20,13 @@ const Certifications = () => {
         return (
           <div className='bdr-box flex h-20 w-full border-b hover:bg-foreground/10 cursor-pointer' key={item.id}>
             <div className='bdr-box flex aspect-square h-full items-center justify-center border-r p-2'>
-              <img src={item.imageSrc} alt={item.label} />
+              <img
+                src={item.imageSrc}
+                alt={item.label}
+                loading='lazy'
+                decoding='async'
+                referrerPolicy='no-referrer'
+              />
             </div>
             <div className='flex h-full w-full flex-col p-2 justify-start items-center gap-1'>
                 <h3 className="w-full textStyle-h font-bold ">{item.label}</h3>

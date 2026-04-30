@@ -6,26 +6,37 @@
 /**
  * Node modules
  */
-import { useEffect } from 'react'
-import Lenis from 'lenis'
+import { useEffect } from 'react';
 
 export default function useLenis() {
   useEffect(() => {
-    const lenis = new Lenis({
-      lerp: 0.1,           // 0 = no smoothing, 1 = instant (replaces duration+easing)
-      smoothWheel : true,
-    })
+    let rafId = 0;
+    let isMounted = true;
+    let lenisInstance: { raf: (time: number) => void; destroy: () => void } | null = null;
 
-    function raf(time: number) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
+    const setupLenis = async () => {
+      const { default: Lenis } = await import('lenis');
+      if (!isMounted) return;
 
-    const rafId = requestAnimationFrame(raf)
+      lenisInstance = new Lenis({
+        lerp: 0.1,
+        smoothWheel: true,
+      });
+
+      const raf = (time: number) => {
+        lenisInstance?.raf(time);
+        rafId = requestAnimationFrame(raf);
+      };
+
+      rafId = requestAnimationFrame(raf);
+    };
+
+    setupLenis();
 
     return () => {
-      cancelAnimationFrame(rafId) 
-      lenis.destroy()
-    }
-  }, [])
+      isMounted = false;
+      cancelAnimationFrame(rafId);
+      lenisInstance?.destroy();
+    };
+  }, []);
 }
