@@ -192,7 +192,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'Ionosperic-TEC-Forecasting',
-    label: 'Ionospheric TEC Forecasting using Deep Learning',
+    label: 'Ionospheric TEC Forecasting',
     description:
       'Time-series forecasting of ionospheric TEC using LSTM and Transformer seq2seq models on minute-level GNSS data.',
 
