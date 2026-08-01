@@ -36,7 +36,7 @@ const Work = () => {
                   {item.label}
                 </p>
                 <p className='textStyle-subHeading inline'>
-                  {item.timeline} Present
+                  {item.timeline}
                 </p>
               </div>
               {item.deployedLink && (
