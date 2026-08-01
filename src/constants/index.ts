@@ -83,7 +83,7 @@ export const CERTIFICATES: Certificate[] = [
     institute: 'INFOSYS | Springboard',
 
     credentialLink:
-      'https://drive.google.com/file/d/1agacBu5IW2bWLwIDAFUAd8KeKEEHfymn/view?usp=sharing',
+      'https://drive.google.com/file/d/1fqD5MgVtsUkA2xnEiOdDv1pvl-TGGnXn/view?usp=sharing',
   },
   {
     id: 'infosys-springboard-gcp-2',
