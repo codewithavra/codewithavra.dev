@@ -91,7 +91,7 @@ export const CERTIFICATES: Certificate[] = [
     description:
       'Comprehensive course covering Fundamentals of Google Cloud Platform.',
 
-    imageSrc: 'https://skillicons.dev/icons?i=infosys',
+    imageSrc: 'https://skillicons.dev/icons?i=gcp',
     issuedOn: '2026-08-01',
     institute: 'INFOSYS | Springboard',
 
