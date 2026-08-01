@@ -15,7 +15,7 @@ import { FaHeart } from 'react-icons/fa';
 
 const Profile = () => {
   return (
-    <div className='bdr-box mx-auto flex h-[120px] max-w-3xl items-center border-x sm:h-[170px] md:h-[220px]'>
+    <div className='bdr-box mx-auto flex h-30 max-w-3xl items-center border-x sm:h-42.5 md:h-55'>
       {/* profile picture */}
       <div className='bdr-box aspect-square h-full border-r'>
         <div className='bdr-box flex size-full items-center p-1'>
