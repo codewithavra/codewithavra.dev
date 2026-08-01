@@ -16,7 +16,7 @@ import { PROJECTS } from '../constants';
  * Icons
  */
 import { LuExpand, LuLink, LuShrink } from 'react-icons/lu';
-import { TbWorldWww } from 'react-icons/tb';
+
 const Work = () => {
   const [expand, setExpand] = useState<string[]>([]);
   return (
@@ -28,16 +28,22 @@ const Work = () => {
             className='bdr-box text-foreground hover:bg-foreground/10 h-fit cursor-pointer border-b'
           >
             <div className='bdr-box flex h-25 w-full items-center justify-between border-b'>
-              <div className='bdr-box flex h-full w-fit items-center justify-center border-r px-4 text-2xl'>
-                <TbWorldWww />
+              <div className='bdr-box flex h-full w-fit shrink-0 items-center justify-center border-r px-4'>
+                <div className='bdr-box rounded-box size-10 overflow-hidden border sm:size-11'>
+                  <img
+                    src={item.imageSrc}
+                    alt={`${item.label} preview`}
+                    loading='lazy'
+                    decoding='async'
+                    className='size-full object-cover'
+                  />
+                </div>
               </div>
               <div className='flex h-full w-full flex-col items-start justify-center gap-2 p-2 leading-tight tracking-tight whitespace-pre-wrap'>
                 <p className='textStyle-heading w-full font-bold'>
                   {item.label}
                 </p>
-                <p className='textStyle-subHeading inline'>
-                  {item.timeline}
-                </p>
+                <p className='textStyle-subHeading inline'>{item.timeline}</p>
               </div>
               {item.deployedLink && (
                 <a
@@ -80,9 +86,7 @@ const Work = () => {
                   </a>
                 )}
               </div>
-              <p className='textStyle-subHeading'>
-                {item.highlights}
-              </p>
+              <p className='textStyle-subHeading'>{item.highlights}</p>
               <div className='textStyle-subHeading flex h-fit w-full flex-wrap items-center justify-start gap-3'>
                 {item.techStack.map((i, idx) => {
                   return (
