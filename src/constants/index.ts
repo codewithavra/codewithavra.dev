@@ -242,7 +242,7 @@ export const PROJECTS: Project[] = [
 
     imageSrc: '/projects/tec.png',
 
-    timeline: 'Mar 2026  – ',
+    timeline: 'Mar 2026 – Jul 2026',
     techStack: ['Python', 'Matplotlib', 'Numpy', 'PyTorch', 'Jupyter Notebook'],
 
     highlights: [
