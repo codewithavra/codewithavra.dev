@@ -8,7 +8,7 @@ const About = () => {
     <div className='text-foreground bdr-box mx-auto flex h-fit w-full max-w-3xl flex-col gap-4 border-x p-4 text-left whitespace-pre-wrap'>
       <p className='textStyle-heading'>
         I'm Avranil, an Electronics & Communication Engineering student at
-        Narula Institute of Technology, Kolkata — with a CGPA of 9.5 and a
+        Narula Institute of Technology, Kolkata — with a CGPA of 9.39 and a
         passion for building things on the web.
         <br />
         <br />
