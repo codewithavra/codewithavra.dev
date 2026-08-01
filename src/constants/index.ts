@@ -73,6 +73,32 @@ export const SOCIALS: Social[] = [
  */
 export const CERTIFICATES: Certificate[] = [
   {
+    id: 'infosys-springboard-gcp-1',
+    label: 'Learning Google Cloud Platform',
+    description:
+      'Comprehensive course on Google Cloud Platform.',
+
+    imageSrc: 'https://skillicons.dev/icons?i=gcp',
+    issuedOn: '2026-08-01',
+    institute: 'INFOSYS | Springboard',
+
+    credentialLink:
+      'https://drive.google.com/file/d/1agacBu5IW2bWLwIDAFUAd8KeKEEHfymn/view?usp=sharing',
+  },
+  {
+    id: 'infosys-springboard-gcp-2',
+    label: 'Introduction to GCP: Fundamentals of Google Cloud Platform',
+    description:
+      'Comprehensive course covering Fundamentals of Google Cloud Platform.',
+
+    imageSrc: 'https://skillicons.dev/icons?i=infosys',
+    issuedOn: '2026-08-01',
+    institute: 'INFOSYS | Springboard',
+
+    credentialLink:
+      'https://drive.google.com/file/d/1Ve6xHFtDJ5JlynqTns_LeGzOOu1ZXUu4/view?usp=sharing',
+  },
+  {
     id: 'nptel-java',
     label: 'Programming in Java',
     description:
@@ -144,7 +170,7 @@ export const CERTIFICATES: Certificate[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: 'portfolio',
+    id: 'Developer Portfolio',
     label: 'Developer Portfolio',
     description:
       'Personal portfolio showcasing projects, certifications, and technical skills with a modern UI and responsive design.',
@@ -207,17 +233,17 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    id: 'tec-forecasting',
+    id: 'Ionosperic-TEC-Forecasting',
     label: 'Ionospheric TEC Forecasting using Deep Learning',
     description:
       'Time-series forecasting of ionospheric TEC using LSTM and Transformer seq2seq models on minute-level GNSS data.',
 
-    githubLink: 'https://github.com/codewithavra/tec-forecasting',
+    githubLink: 'https://github.com/codewithavra/ionospheric-tec-forecasting',
 
     imageSrc: '/projects/tec.png',
 
     timeline: 'Mar 2026  – ',
-    techStack: ['Python', 'Matplotlib', 'Numpy', 'TensorFlow', 'Jupyter Notebook'],
+    techStack: ['Python', 'Matplotlib', 'Numpy', 'PyTorch', 'Jupyter Notebook'],
 
     highlights: [
       'Processed 41 days of GNSS TEC data (1440 steps/day)',
@@ -282,7 +308,7 @@ export const EDUCATION: Education[] = [
     institution: "Narula Institute of Technology",
     degree: "B.Tech",
     field: "Electronics & Communication Engineering",
-    grade: "9.5",
+    grade: "9.39",
     gradeType: "CGPA",
     period: "Aug, 2023~Present",
     location: "Kolkata",
