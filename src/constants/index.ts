@@ -180,7 +180,7 @@ export const PROJECTS: Project[] = [
 
     imageSrc: '/projects/portfolio.png',
 
-    timeline: 'Apr 2026  - ',
+    timeline: 'Apr 2026',
     techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
 
     highlights: [
@@ -201,7 +201,7 @@ export const PROJECTS: Project[] = [
 
     imageSrc: '/projects/prettier.png',
 
-    timeline: 'Apr 2026  - ',
+    timeline: 'Apr 2026',
     techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
 
     highlights: [
@@ -222,7 +222,7 @@ export const PROJECTS: Project[] = [
 
     imageSrc: '/projects/qr.png',
 
-    timeline: 'Apr 2026  - ',
+    timeline: 'Apr 2026',
     techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
 
     highlights: [
