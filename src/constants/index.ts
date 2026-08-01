@@ -180,7 +180,7 @@ export const PROJECTS: Project[] = [
 
     imageSrc: '/projects/portfolio.png',
 
-    timeline: 'Apr 2026',
+    timeline: 'Apr 2026 – Aug 2026',
     techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
 
     highlights: [
@@ -190,6 +190,27 @@ export const PROJECTS: Project[] = [
       'Reusable component architecture',
     ],
   },
+  {
+    id: 'Ionosperic-TEC-Forecasting',
+    label: 'Ionospheric TEC Forecasting using Deep Learning',
+    description:
+      'Time-series forecasting of ionospheric TEC using LSTM and Transformer seq2seq models on minute-level GNSS data.',
+
+    githubLink: 'https://github.com/codewithavra/ionospheric-tec-forecasting',
+
+    imageSrc: '/projects/tec.png',
+
+    timeline: 'Mar 2026 – Jul 2026',
+    techStack: ['Python', 'Matplotlib', 'Numpy', 'PyTorch', 'Jupyter Notebook'],
+
+    highlights: [
+      'Processed 41 days of GNSS TEC data (1440 steps/day)',
+      'Implemented LSTM and Transformer architectures',
+      'Used leakage-safe z-score normalization',
+      'Evaluated with RMSE and MAE metrics',
+    ],
+  },
+  
   {
     id: 'prettier-studio',
     label: 'Prettier Studio — Interactive Config Generator',
@@ -232,26 +253,7 @@ export const PROJECTS: Project[] = [
       'Responsive UI across devices',
     ],
   },
-  {
-    id: 'Ionosperic-TEC-Forecasting',
-    label: 'Ionospheric TEC Forecasting using Deep Learning',
-    description:
-      'Time-series forecasting of ionospheric TEC using LSTM and Transformer seq2seq models on minute-level GNSS data.',
-
-    githubLink: 'https://github.com/codewithavra/ionospheric-tec-forecasting',
-
-    imageSrc: '/projects/tec.png',
-
-    timeline: 'Mar 2026 – Jul 2026',
-    techStack: ['Python', 'Matplotlib', 'Numpy', 'PyTorch', 'Jupyter Notebook'],
-
-    highlights: [
-      'Processed 41 days of GNSS TEC data (1440 steps/day)',
-      'Implemented LSTM and Transformer architectures',
-      'Used leakage-safe z-score normalization',
-      'Evaluated with RMSE and MAE metrics',
-    ],
-  },
+  
 ];
 
 
