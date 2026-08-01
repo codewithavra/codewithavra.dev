@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#18181b"/>
+  <text
+    x="256"
+    y="384"
+    text-anchor="middle"
+    font-family="'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace"
+    font-size="384"
+    font-weight="800"
+    fill="#fff"
+  >A</text>
+</svg>
