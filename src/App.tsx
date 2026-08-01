@@ -32,7 +32,7 @@ import useLenis from './hooks/useLenis';
 /**
  * Constants
  */
-import {CERTIFICATES} from "./constants/index"
+import {CERTIFICATES,PROJECTS} from "./constants/index"
 
 /**
  * Section
@@ -104,7 +104,7 @@ const App = () => {
       <Break />
       
       {/* Projecct Section */}
-      <SectionName name='My Works' count={4} id='work'/>
+      <SectionName name='My Works' count={PROJECTS.length} id='work'/>
       <section className='bdr-box h-fit w-full border-b'>
         <Suspense fallback={lazyFallback}>
           <Work />
