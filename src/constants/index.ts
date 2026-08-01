@@ -1,7 +1,14 @@
 /**
  * Interfaces & Types
  */
-import type { Certificate, NavItem, Social, Project, TechCategory, Education } from '../types/index.ts';
+import type {
+  Certificate,
+  NavItem,
+  Social,
+  Project,
+  TechCategory,
+  Education,
+} from '../types/index.ts';
 
 /**
  * Icons
@@ -15,7 +22,7 @@ import {
   FaCode,
 } from 'react-icons/fa6';
 import { HiHome } from 'react-icons/hi';
-import { IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoLinkedin } from 'react-icons/io5';
 /**
  * NavItems
  */
@@ -75,8 +82,7 @@ export const CERTIFICATES: Certificate[] = [
   {
     id: 'infosys-springboard-gcp-1',
     label: 'Learning Google Cloud Platform',
-    description:
-      'Comprehensive course on Google Cloud Platform.',
+    description: 'Comprehensive course on Google Cloud Platform.',
 
     imageSrc: 'https://skillicons.dev/icons?i=gcp',
     issuedOn: '2026-08-01',
@@ -134,7 +140,8 @@ export const CERTIFICATES: Certificate[] = [
     issuedOn: '2025-02-12',
     institute: 'Ardent Computech Pvt. Ltd.',
 
-    credentialLink: 'https://drive.google.com/file/d/1fuzO5S7_BZk5TWuGyMfjKZ6ZSXjblR-b/view?usp=sharing', // optional: add if you upload to Drive
+    credentialLink:
+      'https://drive.google.com/file/d/1fuzO5S7_BZk5TWuGyMfjKZ6ZSXjblR-b/view?usp=sharing', // optional: add if you upload to Drive
   },
   {
     id: 'nptel-dbms',
@@ -170,6 +177,37 @@ export const CERTIFICATES: Certificate[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: 'ContextAI',
+    label: 'ContextAI',
+    description:
+      'AI-powered RAG application for uploading documents and having context-aware conversations using semantic search and LLMs.',
+
+    githubLink: 'https://github.com/codewithavra/ContextAi',
+    deployedLink: 'https://context-ai-pi.vercel.app/',
+
+    imageSrc: '/projects/context-ai.svg',
+
+    timeline: 'Jul 2026 – Aug 2026',
+    techStack: [
+      'React',
+      'TypeScript',
+      'Express',
+      'LangChain',
+      'MongoDB',
+      'Redis',
+      'BullMQ',
+      'Gemini',
+      'Groq',
+    ],
+
+    highlights: [
+      'Retrieval-Augmented Generation (RAG) pipeline',
+      'Semantic document search with vector embeddings',
+      'Asynchronous document ingestion using BullMQ and Redis',
+      'Context-aware AI conversations over uploaded documents',
+    ],
+  },
+  {
     id: 'Developer Portfolio',
     label: 'Developer Portfolio',
     description:
@@ -178,7 +216,7 @@ export const PROJECTS: Project[] = [
     githubLink: 'https://github.com/codewithavra/codewithavra.dev', // update if different
     deployedLink: 'https://codewithavra.vercel.app/',
 
-    imageSrc: '/projects/portfolio.png',
+    imageSrc: '/projects/portfolio.svg',
 
     timeline: 'Apr 2026 – Aug 2026',
     techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
@@ -198,7 +236,7 @@ export const PROJECTS: Project[] = [
 
     githubLink: 'https://github.com/codewithavra/ionospheric-tec-forecasting',
 
-    imageSrc: '/projects/tec.png',
+    imageSrc: '/projects/tec.svg',
 
     timeline: 'Mar 2026 – Jul 2026',
     techStack: ['Python', 'Matplotlib', 'Numpy', 'PyTorch', 'Jupyter Notebook'],
@@ -210,7 +248,7 @@ export const PROJECTS: Project[] = [
       'Evaluated with RMSE and MAE metrics',
     ],
   },
-  
+
   {
     id: 'prettier-studio',
     label: 'Prettier Studio — Interactive Config Generator',
@@ -220,7 +258,7 @@ export const PROJECTS: Project[] = [
     githubLink: 'https://github.com/codewithavra/prettier-config-generator',
     deployedLink: 'https://prettierstudio.vercel.app/',
 
-    imageSrc: '/projects/prettier.png',
+    imageSrc: '/projects/prettier.svg',
 
     timeline: 'Apr 2026',
     techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
@@ -241,7 +279,7 @@ export const PROJECTS: Project[] = [
     githubLink: 'https://github.com/codewithavra/QR-Code-Generator',
     deployedLink: 'https://qr-craft-iota.vercel.app/',
 
-    imageSrc: '/projects/qr.png',
+    imageSrc: '/projects/qr.svg',
 
     timeline: 'Apr 2026',
     techStack: ['React', 'Typescript', 'Tailwindcss', 'Vercel'],
@@ -253,9 +291,7 @@ export const PROJECTS: Project[] = [
       'Responsive UI across devices',
     ],
   },
-  
 ];
-
 
 /**
  * TechStack
@@ -263,74 +299,72 @@ export const PROJECTS: Project[] = [
 
 export const TECH_STACK: TechCategory[] = [
   {
-    label: "Frontend",
+    label: 'Frontend',
     items: [
-      { name: "HTML", icon: "html" },
-      { name: "CSS", icon: "css" },
-      { name: "Tailwind", icon: "tailwind" },
-      { name: "React", icon: "react" },
-      { name: "JavaScript", icon: "js" },
-      { name: "TypeScript", icon: "ts" },
+      { name: 'HTML', icon: 'html' },
+      { name: 'CSS', icon: 'css' },
+      { name: 'Tailwind', icon: 'tailwind' },
+      { name: 'React', icon: 'react' },
+      { name: 'JavaScript', icon: 'js' },
+      { name: 'TypeScript', icon: 'ts' },
     ],
   },
   {
-    label: "Backend",
+    label: 'Backend',
     items: [
-      { name: "Node.js", icon: "nodejs" },
-      { name: "Bun", icon: "bun" },
-      { name: "Express", icon: "express" },
-      { name: "MongoDB", icon: "mongodb" },
-      { name: "MySQL", icon: "mysql" },
-      { name: "SQL", icon: "postgresql" },
+      { name: 'Node.js', icon: 'nodejs' },
+      { name: 'Bun', icon: 'bun' },
+      { name: 'Express', icon: 'express' },
+      { name: 'MongoDB', icon: 'mongodb' },
+      { name: 'MySQL', icon: 'mysql' },
+      { name: 'SQL', icon: 'postgresql' },
     ],
   },
   {
-    label: "Languages",
+    label: 'Languages',
     items: [
-      { name: "Java", icon: "java" },
-      { name: "Python", icon: "python" },
-      { name: "C", icon: "c" },
+      { name: 'Java', icon: 'java' },
+      { name: 'Python', icon: 'python' },
+      { name: 'C', icon: 'c' },
     ],
   },
   {
-    label: "Tools & DevOps",
+    label: 'Tools & DevOps',
     items: [
-      { name: "Git", icon: "git" },
-      { name: "GitHub", icon: "github" },
-      { name: "Linux", icon: "linux" },
-      { name: "Vercel", icon: "vercel" },
+      { name: 'Git', icon: 'git' },
+      { name: 'GitHub', icon: 'github' },
+      { name: 'Linux', icon: 'linux' },
+      { name: 'Vercel', icon: 'vercel' },
     ],
   },
 ];
 
-
-
 export const EDUCATION: Education[] = [
   {
-    institution: "Narula Institute of Technology",
-    degree: "B.Tech",
-    field: "Electronics & Communication Engineering",
-    grade: "9.39",
-    gradeType: "CGPA",
-    period: "Aug, 2023~Present",
-    location: "Kolkata",
+    institution: 'Narula Institute of Technology',
+    degree: 'B.Tech',
+    field: 'Electronics & Communication Engineering',
+    grade: '9.39',
+    gradeType: 'CGPA',
+    period: 'Aug, 2023~Present',
+    location: 'Kolkata',
   },
   {
-    institution: "Kalyan Nagar Vidyapith",
-    degree: "10+2 (W.B.C.H.S.E)",
-    field: "Pure Science",
+    institution: 'Kalyan Nagar Vidyapith',
+    degree: '10+2 (W.B.C.H.S.E)',
+    field: 'Pure Science',
 
-    grade: "80",
-    gradeType: "percentage",
-    period: "2022",
-    location: "Kolkata",
+    grade: '80',
+    gradeType: 'percentage',
+    period: '2022',
+    location: 'Kolkata',
   },
   {
-    institution: "Kalyan Nagar Vidyapith",
-    degree: "10 (W.B.B.S.E)",
-    grade: "81",
-    gradeType: "percentage",
-    period: "2020",
-    location: "Kolkata",
+    institution: 'Kalyan Nagar Vidyapith',
+    degree: '10 (W.B.B.S.E)',
+    grade: '81',
+    gradeType: 'percentage',
+    period: '2020',
+    location: 'Kolkata',
   },
 ];
