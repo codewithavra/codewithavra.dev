@@ -24,11 +24,19 @@ import Hero from './sections/Hero';
 import Profile from './sections/Profile';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
-
 /**
  * Hooks
- */
+*/
 import useLenis from './hooks/useLenis';
+
+/**
+ * Constants
+ */
+import {CERTIFICATES} from "./constants/index"
+
+/**
+ * Section
+ */
 
 const Menu = lazy(() => import('./components/Menu'));
 const TechStack = lazy(() => import('./components/TechStack'));
@@ -119,7 +127,7 @@ const App = () => {
       {/* Break */}
       <Break />
       {/* Certification */}
-      <SectionName name='Certifications' id='certifications' count={5}/>
+      <SectionName name='Certifications' id='certifications' count={CERTIFICATES.length}/>
       <section className='h-fit w-full'>
         <Suspense fallback={lazyFallback}>
           <Certifications />
