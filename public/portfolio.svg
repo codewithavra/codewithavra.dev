@@ -1,12 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" rx="128" fill="#18181b"/>
-  <text
-    x="256"
-    y="384"
-    text-anchor="middle"
-    font-family="'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace"
-    font-size="384"
-    font-weight="800"
-    fill="#fff"
-  >A</text>
+<svg width="23847" height="23847" viewBox="0 0 23847 23847" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="23847" height="23847" rx="4556" fill="#3B3535"/>
+<rect x="7909" y="11924" width="8030" height="3946" fill="#E9CE33"/>
+<rect x="7909" y="2740" width="8030" height="3946" fill="#E9CE34"/>
+<rect x="3076" y="19596" width="12910" height="4833" transform="rotate(-90 3076 19596)" fill="#47ACFF"/>
+<rect x="15939" y="19596" width="12910" height="4833" transform="rotate(-90 15939 19596)" fill="#E9CE33"/>
 </svg>
