@@ -22,8 +22,6 @@ import { NAV_ITEMS } from '../constants';
  */
 import { MdMenu } from 'react-icons/md';
 import { BiDownload } from 'react-icons/bi';
-import { Logo } from './Logo';
-
 
 /**
  * Prop
@@ -36,7 +34,7 @@ type prop = {
 const Navbar = ({  setOpenMenu }: prop) => {
   return (
     <div className='bdr-box mx-auto flex h-fit min-h-10 w-full max-w-3xl items-center justify-end gap-2 border-x p-2 tracking-tight sm:min-h-11 md:min-h-12 bg-background/70 backdrop-blur-xs  sm:backdrop-blur-sm'>
-      <div className=" size-fit border bdr-box text-foreground mr-auto"><Logo className="w-20" /></div>
+      <div className=" size-fit border bdr-box text-foreground mr-auto"><img src="portfolio.svg" alt="logo"  width={40}/></div>
       <div className='hidden w-full justify-end gap-2 sm:flex sm:gap-3 sm:items-center border-r bdr-box px-2'>
         
         {NAV_ITEMS.map((item) => {
