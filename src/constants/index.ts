@@ -105,6 +105,19 @@ export const CERTIFICATES: Certificate[] = [
       'https://drive.google.com/file/d/1Ve6xHFtDJ5JlynqTns_LeGzOOu1ZXUu4/view?usp=sharing',
   },
   {
+    id: 'nptel-ai',
+    label: 'Artificial Intelligence: Knowledge Representation and Reasoning',
+    description:
+      'Comprehensive course covering Artificial Intelligence.',
+
+    imageSrc: 'https://skillicons.dev/icons?i=ai',
+    issuedOn: '2026-11-5',
+    institute: 'NPTEL (IIT Madras)',
+
+    credentialLink:
+      'https://drive.google.com/file/d/1VBNaTP3MIdEnHXXhzBMcO1yE5LeuMuxS/view?usp=sharing',
+  },
+  {
     id: 'nptel-java',
     label: 'Programming in Java',
     description:
