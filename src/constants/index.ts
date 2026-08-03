@@ -111,7 +111,7 @@ export const CERTIFICATES: Certificate[] = [
       'Comprehensive course covering Artificial Intelligence.',
 
     imageSrc: 'https://skillicons.dev/icons?i=ai',
-    issuedOn: '2026-11-5',
+    issuedOn: '2026-11-05',
     institute: 'NPTEL (IIT Madras)',
 
     credentialLink:
