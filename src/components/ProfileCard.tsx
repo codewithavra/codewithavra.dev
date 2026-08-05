@@ -58,7 +58,7 @@ const ProfileCard = () => {
           <div className='md:text-md border-foreground/20 bg-foreground/10 rounded-md border p-1 font-mono text-xs sm:text-sm lg:text-lg'>
             <RiVercelFill />
           </div>
-          <a href='https://codewithavra-dev.vercel.app'>codewithavra</a>
+          <a href='https://codewithavra.vercel.app'>codewithavra</a>
         </div>
       </div>
       <div className='text-foreground/80 md:text-md col-span-1 row-span-1 flex flex-col gap-3 font-mono text-xs sm:text-sm lg:text-lg'>
