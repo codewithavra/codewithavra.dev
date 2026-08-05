@@ -44,7 +44,7 @@ const ProfileCard = () => {
           <div className='md:text-md border-foreground/20 bg-foreground/10 rounded-md border p-1 font-mono text-xs sm:text-sm lg:text-lg'>
             <BiCode />
           </div>
-          <p>Intern @ShadowFox</p>
+          <p>Ex-Intern @ShadowFox</p>
         </div>
         {/* item */}
         <div className='flex w-full items-center gap-2'>
