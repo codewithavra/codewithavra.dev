@@ -190,20 +190,20 @@ export const CERTIFICATES: Certificate[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: 'ContextAI',
-    label: 'ContextAI',
+    id: 'Lumina',
+    label: 'Lumina',
     description:
       'AI-powered RAG application for uploading documents and having context-aware conversations using semantic search and LLMs.',
 
-    githubLink: 'https://github.com/codewithavra/ContextAi',
-    deployedLink: 'https://context-ai-pi.vercel.app/',
+    githubLink: 'https://github.com/codewithavra/LuminaDocs',
+    deployedLink: 'https://lumina-docs-ten.vercel.app/',
 
-    imageSrc: '/projects/context-ai.svg',
+    imageSrc: '/projects/lumina.svg',
 
     timeline: 'Jul 2026 – Aug 2026',
     techStack: [
       'React',
-      'TypeScript',
+      'JavaScript',
       'Express',
       'LangChain',
       'MongoDB',
