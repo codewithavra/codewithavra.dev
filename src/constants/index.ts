@@ -359,7 +359,7 @@ export const EDUCATION: Education[] = [
     field: 'Electronics & Communication Engineering',
     grade: '9.39',
     gradeType: 'CGPA',
-    period: 'Aug, 2023~2027',
+    period: '2023~2027',
     location: 'Kolkata',
   },
   {
